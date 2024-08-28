@@ -503,7 +503,13 @@
 
  /* Pricing Section */
 
- .pricing span {font-size: 60px; }
+ .testimonials h2,
+ .testimonials h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+
+ .pricing span { font-size: 60px; }
  .pricing .package { font-size: 20px; }
  .testimonials .card .pricing { margin-top: 30px; }
 
