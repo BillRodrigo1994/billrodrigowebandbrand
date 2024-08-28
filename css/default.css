@@ -1,0 +1,172 @@
+/* ------------- DEFAULT.CSS ------------- */
+
+:root {
+  --yellow: #e8b349;
+  --blue: #20A8E2;
+  --darkblue: #0f2649;
+  --green: #5BBF83;
+  --red: #CF0000;
+  --black: #292929;
+  --white: #f5f5f5;
+  --grey: #677788;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  padding: 4.6875rem 0;
+  height: 100dvh;
+}
+
+body { 
+  background-image: url("/assets/white\ background.jpg");
+  padding: 200px 0;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+body::before {
+  background-image: linear-gradient( 180deg, rgba(21, 27, 38, 0.4) 40%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  width: 100% ;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+*,
+::after,
+::before { box-sizing: border-box; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a { 
+  text-decoration: none; 
+  color: var(--black);
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+
+h1, h2, h3, h4, h5, p { margin: 0; }
+
+h1, h2 { 
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 45px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: whitesmoke;
+ }
+
+ h3 {
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  color: silver;
+ }
+
+p { 
+  color: var(--black);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+section { padding: 100px 0; overflow: hidden; }
+#shadow-host-companion { padding: 0px; }
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn,
+button {
+  background: linear-gradient(45deg, var(--darkblue), var(--blue));
+  display: inline-block;
+  font-weight: 400;
+  color: whitesmoke;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 9px 27px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+  text-wrap: nowrap;
+  box-shadow: 1px 1px 5px white;
+  border: 0px solid white;
+}
+
+.card {
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#scrollup {
+  background: rgb(32,168,226);
+  background: linear-gradient(0deg, var(--darkblue), var(--blue));
+  color: whitesmoke;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#scrollup i { pointer-events: none; }
+
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+
+/* Hover Effects */
+
+.nav-link .first:hover { color: var(--blue); }
+.btn:hover,
+button:hover,
+#messge:hover { filter: contrast(140%); }
+
+.testimonials .wavy .fa-linkedin:hover { color: var(--darkblue); }
+ #footerBtn:hover { background-color: rgba(0, 0, 0, 0.2); }
+ footer .socials .upwork:hover { background-color: rgb(20,168,0); }
+ footer .socials .linkedin:hover { background-color: rgb(10,102,194); }
+ footer .socials .instagram:hover { background: linear-gradient(45deg, #833ab4, #e1306c); }

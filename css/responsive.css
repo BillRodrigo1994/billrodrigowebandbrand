@@ -1,0 +1,225 @@
+.navbar-toggler {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  outline: none;
+  background-color: transparent;
+  border: 0px solid white;
+  padding: 3px 10px 5px 10px;
+  background-color: rgb(63,195,242);
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+.navbar-toggler span {
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link a {
+  color: #111111;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: "Hind" sans-serif;
+  text-transform: uppercase;
+  margin-right: 40px;
+  line-height: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+    margin: 10px 10px 0 0;
+  }  
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="false"] ~ .buy {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: saturate(300%) blur(10px);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 120px 0;
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: 20px;
+    color: #666; 
+  }
+
+  [aria-expanded="true"] ~ .buy {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg-header .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transform: scale(0.9);
+    margin: -70px 0 -100px 0;
+  }
+
+  .bg-header .container img { width: 550px; }
+  .bg-header .hero-wrapper { width: 700px; }
+  .carousel { height: 150px; }
+  .carousel .logotype { transform: scale(0.8); }
+  .website { margin: 30px 0 -50px 0; }
+  .website .firstRow { flex-direction: column-reverse; }
+  .branding .firstRow { flex-direction: column; }
+
+  .portfolio .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .portfolio .bigCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .portfolio .SaaS {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio .SaaS img { width: 400px; }
+  .testimonials .yellowCard { margin-top: 0px; }
+
+  .testimonials .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .process .container { transform: scale(0.85);}
+  .process .container h3 { font-size: 20px; }
+  .calendly h3 { margin: 0 0 10px 0; }
+
+  footer .container { 
+    flex-direction: column;
+    gap: 20px;
+   }
+
+  footer  .logoSocials { order: 2; }
+}
+
+@media screen and (max-width: 440px) {
+
+  [aria-controls="navbarDropdown"] {
+    display: block;
+    margin: 10px 10px 0 0;
+  }  
+    
+  [aria-expanded="true"] ~ ul {
+  padding: 40px 0 120px 0;
+  flex-direction: column;
+  gap: 15px;
+}
+
+[aria-expanded="true"] ~ .buy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 265px;
+  display: flex;
+  justify-content: center; 
+}
+
+#navbar-brand a img { width: 250px;}
+.container { padding-right: 10px; padding-left: 10px;}
+
+.bg-header .hero-wrapper {
+   width: 450px; 
+   margin: 0 0 0 0;
+  }
+
+.bg-header .container img { width: 380px; }
+.bg-header .hOne{ font-size: 55px; }
+#message { margin: 20px 0 0 0; }
+
+.bg-header .container img { 
+  height: 450px; 
+  margin: 0 0 0 0;
+}
+
+.carousel .logotype img { width: 100px; }
+
+.problems .websiteKeyWords { 
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.process .container { 
+  flex-direction: column;
+  gap: 40px;
+}
+
+.process .container .step  {
+  flex-direction: row;
+  width: 300px;
+}
+
+.process .step h3 { margin: 0px 0 0 0; }
+
+.process .container .arrow { 
+  transform: rotate(90deg); 
+  margin: 0 0 0 -200px;
+}
+
+.calendly h3 { margin-bottom: 30px;}
+.form .formWrapper { flex-direction: column;}
+
+.form .formWrapper .sendMessage { 
+  margin: 0 0 40px 0;
+  padding: 30px 20px;
+  width: 95%;
+ }
+
+ footer .navbar-nav { 
+  flex-direction: column;
+  gap: 10px; 
+}
+
+
+}
